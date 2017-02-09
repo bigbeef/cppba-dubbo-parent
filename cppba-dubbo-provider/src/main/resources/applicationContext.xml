@@ -16,6 +16,8 @@
     <dubbo:application name="dubbo_provider"></dubbo:application>
     <!-- 使用zookeeper注册中心暴露服务地址 -->
     <dubbo:registry protocol="zookeeper" address="zookeeper://bn.cppba.com:2181" ></dubbo:registry>
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="20880" />
     <!-- 要暴露的服务接口 -->
     <dubbo:annotation package="com.cppba.serviceImpl"/>
 
